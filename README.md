@@ -21,7 +21,7 @@ Además, el **segundo cuatrimestre de 3º lo cursé de Erasmus en Suecia, en la 
 - [3º curso](#3º-curso)
   - [🇸🇪 Erasmus en la Linnaeus University (Suecia)](#-erasmus-en-la-linnaeus-university-suecia)
 - [4º curso](#4º-curso)
-  - [⭐ Trabajo de Fin de Grado](#-trabajo-de-fin-de-grado-tfg)
+  - [Trabajo de Fin de Grado](#-trabajo-de-fin-de-grado-tfg)
 - [Tecnologías y lenguajes](#-tecnologías-y-lenguajes)
 - [Cómo compilar y ejecutar las prácticas](#-cómo-compilar-y-ejecutar-las-prácticas)
 - [Aviso sobre integridad académica](#-aviso-sobre-integridad-académica)
