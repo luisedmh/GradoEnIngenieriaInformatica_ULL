@@ -1,0 +1,25 @@
+1. S-R Global
+2. Puntos Robot (O_0-O_N)
+3. Articulaciones (1-N)
+4. (S-R)_i para cada articulación           |
+    - Prismático => igual que anterior      | => z_{i-1} perpendicular a x_i y que se corten
+    - Rotación => eje z = eje rotación      |
+
+Cuando se vea q no son compatibles se crea un punto intermedio en alguno de los dos puntos, 
+copiando el sistema de referencia del punto elegido
+O_{i-1} -> O_I -> O_i
+
+Realizar el manipulador 3 q seguramente surja esta duda
+
+    A               B               C
+di  O_i-1           Z{i-1}⋀X_i      Z_{i-1}
+θi  X_i-1           X_i             Z_{i-1}
+ai  Z_{i-1}⋀X_i     O_i             X_i
+αi  Z_{i-1}         Z_i             X_i
+
+
+    1       2       2,5     3       4       5_1     5_2     EF
+di  L_1     0       0       L_3     0       0       0       0
+θi  0       0       90      0       θ_4     90-θ_5  90+θ_5  90      Articulaciones solo mirar la del punto anterior
+ai  0       5       0       0       0       2       2       2
+αi  0       90      90      0       -90     0       0       0

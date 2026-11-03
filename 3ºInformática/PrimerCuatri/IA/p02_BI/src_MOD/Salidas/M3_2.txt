@@ -1,0 +1,124 @@
+
+=== LABERINTO ===
+|█0000|
+|E0█00|
+|0███0|
+|0█000|
+|0██0S|
+
+
+=== EJECUCIÓN DINÁMICA ===
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 1
+Reintentos: 0
+Coste del camino: 36
+Nodos generados en esta iteración: 14
+Nodos inspeccionados en esta iteración: 14
+Número de pasos del camino: 6
+Proporción media de paredes: 0.32
+
+Nodos generados (14): (3,4), (4,3), (3,3), (3,2), (2,4), (1,4), (1,3), (0,3), (0,2), (0,4), (0,1), (1,1), (1,0), (2,0)
+Nodos inspeccionados (14): (4,4), (3,3), (3,4), (4,3), (3,2), (2,4), (1,3), (1,4), (0,2), (0,3), (1,1), (0,4), (0,1), (1,0)
+|█0*00|
+|**█*0|
+|0███*|
+|0█00*|
+|0██0S|
+Camino encontrado: (4,4) -> (3,4) -> (2,4) -> (1,3) -> (0,2) -> (1,1) -> (1,0)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 2
+Reintentos: 0
+Coste del camino: 24
+Nodos generados en esta iteración: 19
+Nodos inspeccionados en esta iteración: 10
+Número de pasos del camino: 4
+Proporción media de paredes: 0.12
+
+Nodos generados (19): (2,4), (4,4), (3,3), (2,3), (4,3), (1,3), (2,2), (1,4), (4,2), (0,3), (0,2), (0,4), (2,1), (1,1), (3,1), (0,1), (1,0), (2,0), (3,0)
+Nodos inspeccionados (10): (3,4), (2,3), (2,4), (3,3), (1,3), (2,2), (1,4), (1,1), (2,1), (1,0)
+|█0000|
+|**█00|
+|00**0|
+|00█0+|
+|0000S|
+Camino encontrado: (3,4) -> (2,3) -> (2,2) -> (1,1) -> (1,0)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 3
+Reintentos: 0
+Coste del camino: 17
+Nodos generados en esta iteración: 13
+Nodos inspeccionados en esta iteración: 6
+Número de pasos del camino: 3
+Proporción media de paredes: 0.28
+
+Nodos generados (13): (1,3), (3,3), (2,2), (2,4), (1,2), (3,4), (0,2), (1,1), (0,3), (0,4), (3,1), (1,0), (0,0)
+Nodos inspeccionados (6): (2,3), (1,2), (1,3), (2,2), (1,1), (1,0)
+|0█000|
+|***0█|
+|██0+0|
+|█0█0+|
+|00█0S|
+Camino encontrado: (2,3) -> (1,2) -> (1,1) -> (1,0)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 4
+Reintentos: 0
+Coste del camino: 10
+Nodos generados en esta iteración: 9
+Nodos inspeccionados en esta iteración: 3
+Número de pasos del camino: 2
+Proporción media de paredes: 0.2
+
+Nodos generados (9): (0,2), (2,2), (1,1), (1,3), (0,1), (0,3), (2,3), (1,0), (0,0)
+Nodos inspeccionados (3): (1,2), (1,1), (1,0)
+|0000█|
+|**+00|
+|██0+0|
+|██00+|
+|0000S|
+Camino encontrado: (1,2) -> (1,1) -> (1,0)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 5
+Reintentos: 0
+Coste del camino: 5
+Nodos generados en esta iteración: 4
+Nodos inspeccionados en esta iteración: 2
+Número de pasos del camino: 1
+Proporción media de paredes: 0.28
+
+Nodos generados (4): (1,0), (1,2), (0,2), (2,2)
+Nodos inspeccionados (2): (1,1), (1,0)
+|██0██|
+|*++00|
+|██0+0|
+|0█00+|
+|0000S|
+Camino encontrado: (1,1) -> (1,0)
+===============================================
+Camino dinámico encontrado
+
+=== RESUMEN FINAL DEL CAMINO ===
+Laberinto: 5x5
+Número de filas: 5
+Número de columnas: 5
+Inicio (S): (4, 4)
+Fin (E): (1, 0)
+Camino: (4,4) -> (3,4) -> (2,3) -> (1,2) -> (1,1) -> (1,0)
+Coste: 29
+Número de nodos generados: 60
+Número de nodos inspeccionados: 35
+
+Representación visual final:
+|██0██|
+|***00|
+|██0*0|
+|0█00*|
+|0000S|
+==============================
+
+
+=== EJECUCIÓN FINALIZADA ===

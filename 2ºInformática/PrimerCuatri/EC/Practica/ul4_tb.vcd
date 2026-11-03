@@ -1,0 +1,225 @@
+$date
+	Wed Oct 16 09:07:09 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ul4_tb $end
+$var wire 4 ! Out [3:0] $end
+$var reg 4 " A [3:0] $end
+$var reg 4 # B [3:0] $end
+$var reg 2 $ S [1:0] $end
+$scope module dut $end
+$var wire 4 % A [3:0] $end
+$var wire 4 & B [3:0] $end
+$var wire 2 ' S [1:0] $end
+$var wire 4 ( Out [3:0] $end
+$scope module cl1 $end
+$var wire 2 ) S [1:0] $end
+$var wire 1 * a $end
+$var wire 1 + b $end
+$var wire 1 , w1 $end
+$var wire 1 - w2 $end
+$var wire 1 . w3 $end
+$var wire 1 / w4 $end
+$var wire 1 0 out $end
+$scope module mux4_11 $end
+$var wire 2 1 S [1:0] $end
+$var wire 1 , a $end
+$var wire 1 - b $end
+$var wire 1 . c $end
+$var wire 1 / d $end
+$var reg 1 0 out $end
+$upscope $end
+$upscope $end
+$scope module cl2 $end
+$var wire 2 2 S [1:0] $end
+$var wire 1 3 a $end
+$var wire 1 4 b $end
+$var wire 1 5 w1 $end
+$var wire 1 6 w2 $end
+$var wire 1 7 w3 $end
+$var wire 1 8 w4 $end
+$var wire 1 9 out $end
+$scope module mux4_11 $end
+$var wire 2 : S [1:0] $end
+$var wire 1 5 a $end
+$var wire 1 6 b $end
+$var wire 1 7 c $end
+$var wire 1 8 d $end
+$var reg 1 9 out $end
+$upscope $end
+$upscope $end
+$scope module cl3 $end
+$var wire 2 ; S [1:0] $end
+$var wire 1 < a $end
+$var wire 1 = b $end
+$var wire 1 > w1 $end
+$var wire 1 ? w2 $end
+$var wire 1 @ w3 $end
+$var wire 1 A w4 $end
+$var wire 1 B out $end
+$scope module mux4_11 $end
+$var wire 2 C S [1:0] $end
+$var wire 1 > a $end
+$var wire 1 ? b $end
+$var wire 1 @ c $end
+$var wire 1 A d $end
+$var reg 1 B out $end
+$upscope $end
+$upscope $end
+$scope module cl4 $end
+$var wire 2 D S [1:0] $end
+$var wire 1 E a $end
+$var wire 1 F b $end
+$var wire 1 G w1 $end
+$var wire 1 H w2 $end
+$var wire 1 I w3 $end
+$var wire 1 J w4 $end
+$var wire 1 K out $end
+$scope module mux4_11 $end
+$var wire 2 L S [1:0] $end
+$var wire 1 G a $end
+$var wire 1 H b $end
+$var wire 1 I c $end
+$var wire 1 J d $end
+$var reg 1 K out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 L
+0K
+1J
+0I
+0H
+0G
+0F
+0E
+b0 D
+b0 C
+0B
+1A
+0@
+0?
+0>
+0=
+0<
+b0 ;
+b0 :
+09
+18
+07
+06
+05
+04
+03
+b0 2
+b0 1
+00
+1/
+0.
+0-
+0,
+0+
+0*
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10000
+10
+1B
+19
+b1111 !
+b1111 (
+1K
+1-
+1.
+1?
+1@
+16
+17
+08
+1H
+1I
+0J
+1+
+1=
+13
+1E
+b1 $
+b1 '
+b1 )
+b1 1
+b1 2
+b1 :
+b1 ;
+b1 C
+b1 D
+b1 L
+b101 #
+b101 &
+b1010 "
+b1010 %
+#20000
+0/
+0A
+0+
+0=
+1*
+1<
+b10 $
+b10 '
+b10 )
+b10 1
+b10 2
+b10 :
+b10 ;
+b10 C
+b10 D
+b10 L
+b0 #
+b0 &
+b1111 "
+b1111 %
+#30000
+1/
+18
+10
+19
+0B
+b11 !
+b11 (
+0K
+1+
+14
+0*
+03
+b11 $
+b11 '
+b11 )
+b11 1
+b11 2
+b11 :
+b11 ;
+b11 C
+b11 D
+b11 L
+b11 #
+b11 &
+b1100 "
+b1100 %
+#40000

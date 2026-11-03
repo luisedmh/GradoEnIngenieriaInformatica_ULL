@@ -1,0 +1,6 @@
+Base = 16
+N1 = 236r
+N2 = AB64u
+E1 = AD9A/1r
+N3 = 234i
+E2 = AB66/1r

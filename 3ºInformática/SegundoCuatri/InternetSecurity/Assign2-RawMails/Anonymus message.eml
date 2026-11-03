@@ -1,0 +1,84 @@
+Delivered-To: lm223sg@student.lnu.se
+Received: by 2002:a17:907:3fa7:b0:baa:7d30:83bb with SMTP id hr39csp3196518ejc;
+        Sun, 26 Apr 2026 02:35:02 -0700 (PDT)
+X-Received: by 2002:a05:6512:154f:20b0:5a4:18cd:1c8a with SMTP id 2adb3069b0e04-5a418cd1ca4mr7941534e87.8.1777196101984;
+        Sun, 26 Apr 2026 02:35:01 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1777196101; cv=none;
+        d=google.com; s=arc-20240605;
+        b=JUVfEqBAz0sAicUqya8OVTjRDgj3o1e6/E13RqdTAaIUQdI06MW6CAKSrRJLz6q/hn
+         NsVGXwGuuS2svhUZbQ+oEa6I8agB7osi0O66h+dvcmit7+TLUGPx5OreRo9+sd3sN2Lo
+         N1Qpx0YhgSDvuHc2LeF2l/waPtAhYOAN9kDO1bIYvqYpzixCHnkDxFxx4woCghMLXaZO
+         H74Rys+L29+4n0C0YS/JdOciwUJtJaOVpiCUlnWflzgTJ+Gf+iQ45PZmbghFihq2iVbp
+         Zuhp5Nzss8k0wtfW5hvgJsOAXyDHhd8IsXGJDPIJzZm2GVlmACxb5bqmAANm7RXMYVWW
+         ee2g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=content-transfer-encoding:mime-version:list-unsubscribe
+         :list-unsubscribe-post:message-id:subject:from:to:date
+         :dkim-signature;
+        bh=3CnPXYzv2ZW4sJVIw7/toE5+YDXCYBvCCepelquLvO0=;
+        fh=KlPRexF83uZ2yfdqLjNpXF4v/yx3F6NX2FOj37ZtiH0=;
+        b=brwGg65DkSivZGAgoH2WAuRZB6ZeS9Wqg+bF/FtY/J9moQXOwXNCn6pJL+YUEsnUsb
+         CHGZNYDYdCdK0mQn4vp+mpEJTnY2zMBUzunnoohStSxy2XmN/bvRvNeUe6VvaayMj8ZN
+         cKLBDUKD8vvPAE61WoReBx/wMs60OvyHkLPl6Yyc00/eoeCNIDvYfsXa4hD6GTc3cpaa
+         GBL62JQVsyoUWmhWj69z+rffd65vtsCT0E2sDrvr9pFMWt1QuDp/VQFiiw6dwPQ/NT2G
+         J2af3xJGTBrNbc7pyy7HLUW2CUEU/RcdZjyCWrFSMKCmjTcAeIk+Zvj9ADMEivKy/9RR
+         ty4A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@anonymousemail.se header.s=mail header.b=Lw23KcBj;
+       spf=pass (google.com: domain of noreply@anonymousemail.se designates 185.82.217.109 as permitted sender) smtp.mailfrom=noreply@anonymousemail.se;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=anonymousemail.se
+Return-Path: <noreply@anonymousemail.se>
+Received: from s3.inboxpress.net (s3.inboxpress.net. [185.82.217.109])
+        by mx.google.com with ESMTPS id 2adb3069b0e04-5a4185c3437si10662230e87.83.2026.04.26.02.35.01
+        for <lm223sg@student.lnu.se>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sun, 26 Apr 2026 02:35:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@anonymousemail.se designates 185.82.217.109 as permitted sender) client-ip=185.82.217.109;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@anonymousemail.se header.s=mail header.b=Lw23KcBj;
+       spf=pass (google.com: domain of noreply@anonymousemail.se designates 185.82.217.109 as permitted sender) smtp.mailfrom=noreply@anonymousemail.se;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=anonymousemail.se
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=anonymousemail.se;
+	s=mail; t=1777196100;
+	bh=3CnPXYzv2ZW4sJVIw7/toE5+YDXCYBvCCepelquLvO0=;
+	h=Date:To:From:Subject:List-Unsubscribe:From;
+	b=Lw23KcBjN86JMjIE4oPuUIvTTfBbpuzXL5egdKs6Bniu/kEpBctLhXy998H1U5wBJ
+	 Mw+v73rSoMmH5vWcYDtPvb8ju2QKrRHqHrWrxkU4dN9eZ/EULiT1OxqRe3TiOf3TS6
+	 y+RIOtPHD+uFY3ZdIYAZ8HyhRmeojtMXhHSRuTqMnnbhzLBBArjSm0X9Cl9mRqVL0D
+	 OSAN9ITgiiT3cVoXWurgAkCyIa0bJc3VimAkbYIBNWQ9zMt0PybsVeWPQMn0o83Uxg
+	 f+gCDbSfw7DTUWZIsu8XzpWCay2qyJvSltiAx1oW1xjj5K0ISY8zYzGwOyYN8xOCIJ
+	 bVUyqj1YtuLRQ==
+Received: from authenticated-user (s3.inboxpress.net [185.82.217.109])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by s3.inboxpress.net (Postfix) with ESMTPSA id 6D12423EDB
+	for <lm223sg@student.lnu.se>; Sun, 26 Apr 2026 09:35:00 +0000 (UTC)
+Date: Sun, 26 Apr 2026 11:34:58 +0200
+To: lm223sg@student.lnu.se
+From: Anonymousemail <noreply@anonymousemail.se>
+Subject: Anonymus message
+Message-ID: <368797efcc27aa57c6ba4dbba691fa85@anonymousemail.se>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://anonymousemail.se/unsubscribe.php?uid=RVlwQjhjaWxQTDdpdWtmMzV0QS9NK0pwK0dWSG1EQS9sbjZyanpCKzVvbz0=>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="b1=_EWO9COBIgJwgNFekn4SrvmGfTHaSQCzWtV7aYkWSqA"
+Content-Transfer-Encoding: 8bit
+
+--b1=_EWO9COBIgJwgNFekn4SrvmGfTHaSQCzWtV7aYkWSqA
+Content-Type: text/plain; charset=us-ascii
+
+Powered by Anonymousemail
+
+ajsbdjabdsa
+
+--b1=_EWO9COBIgJwgNFekn4SrvmGfTHaSQCzWtV7aYkWSqA
+Content-Type: text/html; charset=us-ascii
+
+<p><span style="color:#c0392b">Powered by <strong>Anonymousemail</strong></span></p><p>ajsbdjabdsa</p>
+
+
+--b1=_EWO9COBIgJwgNFekn4SrvmGfTHaSQCzWtV7aYkWSqA--
+

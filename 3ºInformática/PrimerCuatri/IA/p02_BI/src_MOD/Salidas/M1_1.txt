@@ -1,0 +1,262 @@
+
+=== LABERINTO ===
+|██████████|
+|█00█00000█|
+|█00█00000█|
+|█00█00█00█|
+|S00████00█|
+|█00000000E|
+|█00000000█|
+|█00████00█|
+|█00█00000█|
+|█00█00000█|
+|██████████|
+
+
+=== EJECUCIÓN DINÁMICA ===
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 1
+Reintentos: 0
+Coste del camino: 47
+Nodos generados en esta iteración: 32
+Nodos inspeccionados en esta iteración: 24
+Número de pasos del camino: 9
+Proporción media de paredes: 0.454545
+
+Nodos generados (32): (4,1), (3,1), (5,1), (6,1), (5,2), (4,2), (6,2), (3,2), (5,3), (6,3), (5,4), (6,4), (2,1), (2,2), (5,5), (6,5), (7,2), (7,1), (5,6), (6,6), (5,7), (4,7), (6,7), (5,8), (4,8), (6,8), (1,2), (1,1), (5,9), (8,2), (8,1), (7,7)
+Nodos inspeccionados (24): (4,0), (5,1), (4,1), (5,2), (4,2), (5,3), (3,1), (5,4), (6,2), (6,1), (3,2), (5,5), (6,3), (5,6), (6,4), (5,7), (2,2), (6,5), (2,1), (5,8), (7,2), (6,6), (7,1), (5,9)
+|██████████|
+|█00█00000█|
+|█00█00000█|
+|█00█00█00█|
+|S00████00█|
+|█*********|
+|█00000000█|
+|█00████00█|
+|█00█00000█|
+|█00█00000█|
+|██████████|
+Camino encontrado: (4,0) -> (5,1) -> (5,2) -> (5,3) -> (5,4) -> (5,5) -> (5,6) -> (5,7) -> (5,8) -> (5,9)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 2
+Reintentos: 0
+Coste del camino: 40
+Nodos generados en esta iteración: 43
+Nodos inspeccionados en esta iteración: 27
+Número de pasos del camino: 8
+Proporción media de paredes: 0.254545
+
+Nodos generados (43): (4,1), (6,1), (5,0), (5,2), (4,0), (4,2), (6,2), (5,3), (4,3), (6,3), (5,4), (6,4), (5,5), (4,5), (6,5), (3,2), (3,1), (7,2), (7,1), (7,3), (5,6), (6,6), (3,4), (5,7), (4,7), (6,7), (7,5), (5,8), (4,8), (6,8), (3,5), (8,3), (8,2), (8,4), (5,9), (4,9), (2,2), (2,1), (2,3), (8,1), (7,7), (2,4), (2,5)
+Nodos inspeccionados (27): (5,1), (5,2), (5,3), (5,4), (4,2), (6,2), (4,1), (6,1), (5,0), (5,5), (4,3), (6,3), (5,6), (6,4), (5,7), (4,0), (4,5), (6,5), (7,3), (5,8), (3,2), (7,2), (6,6), (3,1), (7,1), (3,4), (5,9)
+|0█00██0███|
+|█00000000█|
+|█00000000█|
+|█00█00█00█|
+|S000█0█000|
+|0+********|
+|█00000000█|
+|█000█0█000|
+|█000000000|
+|█000000000|
+|███000█0█0|
+Camino encontrado: (5,1) -> (5,2) -> (5,3) -> (5,4) -> (5,5) -> (5,6) -> (5,7) -> (5,8) -> (5,9)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 3
+Reintentos: 0
+Coste del camino: 39
+Nodos generados en esta iteración: 43
+Nodos inspeccionados en esta iteración: 23
+Número de pasos del camino: 7
+Proporción media de paredes: 0.254545
+
+Nodos generados (43): (4,2), (6,2), (5,1), (5,3), (4,1), (4,3), (6,4), (3,2), (3,4), (3,1), (7,2), (7,1), (7,3), (5,0), (4,0), (6,0), (5,5), (7,5), (4,5), (5,6), (4,6), (6,6), (5,7), (4,7), (6,7), (2,4), (3,5), (2,3), (5,8), (4,8), (6,8), (8,3), (8,2), (8,4), (2,2), (2,1), (8,1), (8,6), (2,6), (5,9), (4,9), (6,9), (7,7)
+Nodos inspeccionados (23): (5,2), (5,3), (4,3), (4,2), (6,2), (5,1), (6,4), (5,5), (5,6), (4,1), (3,4), (5,7), (7,3), (4,5), (3,2), (7,2), (5,0), (7,5), (3,5), (5,8), (4,6), (6,6), (5,9)
+|0000██0█0█|
+|█000█00█0█|
+|00000█00█0|
+|█00█00██0█|
+|S000█00000|
+|0++*█*****|
+|0█0█*█0000|
+|0000█0█000|
+|00000█0000|
+|00█0█00000|
+|█0█00000█0|
+Camino encontrado: (5,2) -> (5,3) -> (6,4) -> (5,5) -> (5,6) -> (5,7) -> (5,8) -> (5,9)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 4
+Reintentos: 0
+Coste del camino: 38
+Nodos generados en esta iteración: 44
+Nodos inspeccionados en esta iteración: 25
+Número de pasos del camino: 6
+Proporción media de paredes: 0.236364
+
+Nodos generados (44): (4,3), (6,3), (5,2), (4,2), (6,2), (6,4), (5,5), (7,3), (7,5), (3,3), (3,2), (3,4), (7,2), (5,1), (6,1), (4,5), (4,6), (6,6), (3,1), (7,1), (7,6), (8,4), (8,6), (2,4), (2,3), (2,5), (3,6), (4,7), (5,7), (7,7), (8,2), (5,0), (4,0), (8,7), (5,8), (4,8), (6,8), (3,8), (7,8), (8,8), (5,9), (4,9), (6,9), (8,9)
+Nodos inspeccionados (25): (5,3), (6,4), (4,3), (6,3), (5,2), (5,5), (4,2), (6,2), (7,5), (3,4), (4,6), (6,6), (7,3), (3,3), (5,1), (4,5), (7,6), (5,7), (4,7), (7,7), (5,8), (4,8), (6,8), (7,8), (5,9)
+|0█00█0██00|
+|0000█0000█|
+|00█00000██|
+|00000█0█0█|
+|S█00█0*000|
+|0+++█*█***|
+|█000*█0█00|
+|0000█0000█|
+|0█0█0█0000|
+|0000000000|
+|00█000000█|
+Camino encontrado: (5,3) -> (6,4) -> (5,5) -> (4,6) -> (5,7) -> (5,8) -> (5,9)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 5
+Reintentos: 0
+Coste del camino: 27
+Nodos generados en esta iteración: 29
+Nodos inspeccionados en esta iteración: 13
+Número de pasos del camino: 5
+Proporción media de paredes: 0.227273
+
+Nodos generados (29): (6,3), (6,5), (5,3), (7,3), (7,5), (6,6), (5,6), (7,6), (5,7), (4,5), (4,7), (6,7), (7,7), (5,8), (4,8), (6,8), (7,8), (5,2), (4,2), (4,4), (6,2), (8,5), (8,6), (5,9), (4,9), (6,9), (7,2), (7,9), (8,7)
+Nodos inspeccionados (13): (6,4), (6,5), (5,6), (6,6), (5,7), (6,7), (5,3), (7,5), (5,8), (6,3), (6,8), (7,6), (5,9)
+|00█0█0000█|
+|000███000█|
+|00█00000██|
+|00000█000█|
+|S█0█00█000|
+|0+++██****|
+|0█00+*0000|
+|0000█00000|
+|0█0██00000|
+|0000█00█00|
+|0█00000000|
+Camino encontrado: (6,4) -> (6,5) -> (5,6) -> (5,7) -> (5,8) -> (5,9)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 6
+Reintentos: 0
+Coste del camino: 22
+Nodos generados en esta iteración: 26
+Nodos inspeccionados en esta iteración: 10
+Número de pasos del camino: 4
+Proporción media de paredes: 0.245455
+
+Nodos generados (26): (5,5), (7,5), (6,4), (6,6), (5,4), (5,6), (7,4), (7,6), (4,6), (4,5), (4,7), (6,7), (4,4), (7,7), (6,8), (5,8), (4,8), (5,9), (6,9), (7,9), (5,3), (4,3), (6,3), (8,6), (8,5), (8,7)
+Nodos inspeccionados (10): (6,5), (5,6), (5,5), (6,6), (6,7), (5,8), (6,8), (5,4), (7,6), (5,9)
+|0000█00000|
+|█00███0000|
+|█000000█0█|
+|000000█00█|
+|S█0000000█|
+|0+++000█**|
+|0000++**00|
+|00██0000█0|
+|0██0█0000█|
+|000█000█00|
+|0██0██000█|
+Camino encontrado: (6,5) -> (6,6) -> (6,7) -> (5,8) -> (5,9)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 7
+Reintentos: 0
+Coste del camino: 17
+Nodos generados en esta iteración: 12
+Nodos inspeccionados en esta iteración: 5
+Número de pasos del camino: 3
+Proporción media de paredes: 0.209091
+
+Nodos generados (12): (5,6), (7,6), (6,5), (6,7), (5,5), (7,5), (7,7), (4,5), (6,8), (6,9), (5,9), (7,9)
+Nodos inspeccionados (5): (6,6), (5,6), (6,7), (6,8), (5,9)
+|000█000000|
+|█0█0█00000|
+|█000000000|
+|000000██0█|
+|S0█000██0█|
+|0+++000██*|
+|0000+++**0|
+|00█00000█0|
+|0██0█00000|
+|000█000█00|
+|0█000█0000|
+Camino encontrado: (6,6) -> (6,7) -> (6,8) -> (5,9)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 8
+Reintentos: 0
+Coste del camino: 12
+Nodos generados en esta iteración: 11
+Nodos inspeccionados en esta iteración: 5
+Número de pasos del camino: 2
+Proporción media de paredes: 0.181818
+
+Nodos generados (11): (5,7), (7,7), (6,6), (6,8), (5,6), (5,8), (4,8), (5,9), (4,9), (6,9), (7,9)
+Nodos inspeccionados (5): (6,7), (5,8), (5,7), (6,8), (5,9)
+|0█000█0000|
+|00█0000000|
+|0000000█00|
+|00000██00█|
+|S██00███00|
+|0+++█000**|
+|0000++++00|
+|0█0000█0█0|
+|00000█0000|
+|00000█0000|
+|0█000000█0|
+Camino encontrado: (6,7) -> (5,8) -> (5,9)
+
+=== INFORMACIÓN DEL CAMINO ENCONTRADO ===
+Iteración: 9
+Reintentos: 0
+Coste del camino: 5
+Nodos generados en esta iteración: 6
+Nodos inspeccionados en esta iteración: 2
+Número de pasos del camino: 1
+Proporción media de paredes: 0.263636
+
+Nodos generados (6): (6,8), (5,7), (5,9), (4,7), (4,9), (6,7)
+Nodos inspeccionados (2): (5,8), (5,9)
+|00█0000██0|
+|█0█0000█00|
+|00██000000|
+|█00000██0█|
+|S0█0███0█0|
+|0+++█000+*|
+|0000++++0█|
+|00000000█0|
+|█0█0██000█|
+|000█0█0000|
+|0█00█00000|
+Camino encontrado: (5,8) -> (5,9)
+===============================================
+Camino dinámico encontrado
+
+=== RESUMEN FINAL DEL CAMINO ===
+Laberinto: 11x10
+Número de filas: 11
+Número de columnas: 10
+Inicio (S): (4, 0)
+Fin (E): (5, 9)
+Camino: (4,0) -> (5,1) -> (5,2) -> (5,3) -> (6,4) -> (6,5) -> (6,6) -> (6,7) -> (5,8) -> (5,9)
+Coste: 51
+Número de nodos generados: 247
+Número de nodos inspeccionados: 134
+
+Representación visual final:
+|00█0000██0|
+|█0█0000█00|
+|00██000000|
+|█00000██0█|
+|S0█0███0█0|
+|0***█000**|
+|0000****0█|
+|00000000█0|
+|█0█0██000█|
+|000█0█0000|
+|0█00█00000|
+==============================
+
+
+=== EJECUCIÓN FINALIZADA ===

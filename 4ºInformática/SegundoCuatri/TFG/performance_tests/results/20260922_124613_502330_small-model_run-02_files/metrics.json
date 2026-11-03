@@ -1,0 +1,13 @@
+{
+  "training_seconds": 0.016495099989697337,
+  "inference_seconds": 0.01813350000884384,
+  "inference_runs": 20,
+  "samples_per_second": 2205862.0773977283,
+  "accuracy": 0.796,
+  "samples": 2000,
+  "features": 32,
+  "hidden": 32,
+  "epochs": 5,
+  "batch_size": 128,
+  "seed": 43
+}

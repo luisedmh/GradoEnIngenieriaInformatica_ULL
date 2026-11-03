@@ -1,0 +1,35 @@
+{
+  "name": "small-model",
+  "runs": 3,
+  "warmups": 1,
+  "seed": 42,
+  "timeout_seconds": 60,
+  "parameters": {
+    "samples": 2000,
+    "features": 32,
+    "hidden": 32,
+    "epochs": 5,
+    "batch_size": 128,
+    "inference_runs": 20
+  },
+  "command": [
+    "{python}",
+    "{root}/benchmarks/small_model.py",
+    "--samples",
+    "{samples}",
+    "--features",
+    "{features}",
+    "--hidden",
+    "{hidden}",
+    "--epochs",
+    "{epochs}",
+    "--batch-size",
+    "{batch_size}",
+    "--inference-runs",
+    "{inference_runs}",
+    "--seed",
+    "{seed}",
+    "--output-dir",
+    "{artifacts_dir}"
+  ]
+}

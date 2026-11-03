@@ -1,0 +1,51 @@
+$date
+	Tue Oct 22 11:29:05 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module tb_compl1 $end
+$var wire 4 ! Out [3:0] $end
+$var reg 4 " Inp [3:0] $end
+$var reg 1 # cpl $end
+$scope module uut $end
+$var wire 4 $ Inp [3:0] $end
+$var wire 1 # cpl $end
+$var wire 4 % Out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 %
+b101 $
+0#
+b101 "
+b101 !
+$end
+#1000
+b1010 !
+b1010 %
+1#
+#2000
+b1111 !
+b1111 %
+0#
+b1111 "
+b1111 $
+#3000
+b0 !
+b0 %
+1#
+#4000
+0#
+b0 "
+b0 $
+#5000
+b1111 !
+b1111 %
+1#
+#6000

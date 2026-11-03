@@ -1,0 +1,61 @@
+{
+  "test": "small-model",
+  "config": "C:\\Users\\danis\\Desktop\\Proyectos\\TFG_graficas_tests\\performance_tests\\configs\\small_model.json",
+  "run": 2,
+  "seed": 43,
+  "command": [
+    "C:\\Python311\\python.exe",
+    "C:\\Users\\danis\\Desktop\\Proyectos\\TFG_graficas_tests\\performance_tests/benchmarks/small_model.py",
+    "--samples",
+    "2000",
+    "--features",
+    "32",
+    "--hidden",
+    "32",
+    "--epochs",
+    "5",
+    "--batch-size",
+    "128",
+    "--inference-runs",
+    "20",
+    "--seed",
+    "43",
+    "--output-dir",
+    "C:\\Users\\danis\\Desktop\\Proyectos\\TFG_graficas_tests\\performance_tests\\results\\20260922_124613_502330_small-model_run-02_files"
+  ],
+  "parameters": {
+    "samples": 2000,
+    "features": 32,
+    "hidden": 32,
+    "epochs": 5,
+    "batch_size": 128,
+    "inference_runs": 20
+  },
+  "artifacts_dir": "C:\\Users\\danis\\Desktop\\Proyectos\\TFG_graficas_tests\\performance_tests\\results\\20260922_124613_502330_small-model_run-02_files",
+  "system": {
+    "hostname": "DESKTOP-VH246KM",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "python": "3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)]"
+  },
+  "started_at": "2026-09-22T12:46:13.502330+01:00",
+  "ended_at": "2026-09-22T12:46:14.127215+01:00",
+  "duration_seconds": 0.6156138000078499,
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "{\"training_seconds\": 0.016495099989697337, \"inference_seconds\": 0.01813350000884384, \"inference_runs\": 20, \"samples_per_second\": 2205862.0773977283, \"accuracy\": 0.796, \"samples\": 2000, \"features\": 32, \"hidden\": 32, \"epochs\": 5, \"batch_size\": 128, \"seed\": 43}\n",
+  "stderr": "",
+  "metrics": {
+    "training_seconds": 0.016495099989697337,
+    "inference_seconds": 0.01813350000884384,
+    "inference_runs": 20,
+    "samples_per_second": 2205862.0773977283,
+    "accuracy": 0.796,
+    "samples": 2000,
+    "features": 32,
+    "hidden": 32,
+    "epochs": 5,
+    "batch_size": 128,
+    "seed": 43
+  }
+}

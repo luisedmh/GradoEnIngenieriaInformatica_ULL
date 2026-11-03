@@ -1,0 +1,19 @@
+# Resultados pesados y regenerables
+*.vtk
+*.bin
+
+# Compilación
+*.o
+bin/
+build/
+.make_tmp/
+
+# Secretos: nunca al repo
+*.key
+*.pem
+
+# Varios
+__pycache__/
+*.log
+results/run/
+.venv/

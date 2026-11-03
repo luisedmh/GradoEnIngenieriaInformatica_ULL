@@ -1,0 +1,50 @@
+1. S-R Fijo
+2. Puntos del robot (0-n)
+3. Articulaciones (1-n)
+4.S-R_i para cada punto
+
+Restricciones:
+    Articulación de Rotación = eje z
+    Articulación Prismática -> Sigue igual
+
+¡X_i perpendicular a Z_{i-1}!
+
+5. P->D-H para cada punto (Parámetros de Denavit-Hartenberg)
+    A               B               C
+di  O_i-1           Z{i-1}⋀X_i      Z_{i-1}
+θi  X_i-1           X_i             Z_{i-1}
+ai  Z_{i-1}⋀X_i     O_i             X_i
+αi  Z_{i-1}         Z_i             X_i
+
+Ejercicio ejemplo:
+    1           2          
+d   0           0
+θ   +θ_1        0+θ_2          
+a   10          5   positivo pq x_2 va en la misma direccion que la DIRECCION DE LA DISTANCIA 
+α   0           0
+
+T_{1-0}       T_{2-1}
+
+T_{2-0} = T_{1-0} \times T_{2-1}
+
+O_{1-1}
+O_{1-0} = T_{1-0} \times O_{1-1}
+O_{2-2}
+O_{2-0} = T_{2-0} \times O_{2-2}
+
+
+
+
+Realizar Manipulador 2
+
+    A               B               C
+di  O_i-1           Z{i-1}⋀X_i      Z_{i-1}
+θi  X_i-1           X_i             Z_{i-1}
+ai  Z_{i-1}⋀X_i     O_i             X_i
+αi  Z_{i-1}         Z_i             X_i
+
+    1           2           3        
+d   5           0           0
+θ   90+θ_1      0           θ_3
+a   0           L_2         2
+α   90          0           0

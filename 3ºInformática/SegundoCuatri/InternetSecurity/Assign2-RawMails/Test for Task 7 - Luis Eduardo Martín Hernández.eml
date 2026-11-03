@@ -1,0 +1,129 @@
+Delivered-To: luiseduardomartinhdez@gmail.com
+Received: by 2002:a05:612c:690c:10b0:598:207d:9959 with SMTP id mr12-n1csp1598359vqb;
+        Mon, 20 Apr 2026 09:05:54 -0700 (PDT)
+X-Received: by 2002:a17:906:f592:b0:ba8:a829:e648 with SMTP id a640c23a62f3a-ba8a82a9a54mr135923066b.24.1776701154323;
+        Mon, 20 Apr 2026 09:05:54 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1776701154; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=CXLT2meWoIjR90ABmXmv1bKO52gjoVAufMPCZUtUtoeUZs2J7jw50c9l4aQy+qGkpD
+         zUGzt79m/Xmy3v0m1naJf/kbiPy2oHO3/T14cU7D/EkLiUzxY8v703qpJDCHvq/utfuw
+         IBBQIbAtyuZXqpzupmXQMs73+x3DhQwMx8BF+/zKiOwfk4WbWlPTYjPhhnWYbphGgk/X
+         XAb8XC1RXMkbJqW1H3E+1Xw/Xm7q22eHrjpbp4bzLtevJiRuYWYCmd0ZV8JaCoYol74r
+         /zUUvQuz8VWReWVrknQF8eHPwEBwHzT/GOVBkBCy1qWtGGc6vSOLNT73YfmnwgZk+TFX
+         3Wyg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=xvB6WJMNYtBBY2KzIzWRbbZcpYkCsPStDi0qgBtG2Rk=;
+        fh=1mu931VkwGkxIr6dTGNbYDJvcrt/elm+y1ZCv+e2ZdU=;
+        b=gcFYZygJueBND2aapeTYNNPp5LxtWZdaYKqnSsLUW20wwQtLcgZS3sawuxhsWyP5Qb
+         XUXGYOSIeyILmuYtxP1nlUFrdhrrzGdfER51K0RMh51K0EFaxCaMXWoe06kj8PTpxYra
+         B1naoMKby5Yp5Tx0uRAJ+htSkYEQhSIMe8vWkTmycpZ0EyJ8azPRdAZqFjF+w3vWZqQd
+         Dnc2LK2hDRVUGdQgsb+hWJjaVXf5xcDesA1+Iy8QdJv0N0zyqmMMD5uUS+fJdTlt9Dn9
+         ryrUnf3PMAKMTP3D3nC/LcDO1sB+AryTXBP9Z6tle5ILyGjpf/KNUMs6lujquH2RJ5Sw
+         YlKQ==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@student.lnu.se header.s=google header.b=U3paPvZ5;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of lm223sg@student.lnu.se designates 209.85.220.41 as permitted sender) smtp.mailfrom=lm223sg@student.lnu.se;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=lnu.se;
+       dara=pass header.i=@gmail.com
+Return-Path: <lm223sg@student.lnu.se>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id a640c23a62f3a-ba8d5b22d35sor34182066b.9.2026.04.20.09.05.54
+        for <luiseduardomartinhdez@gmail.com>
+        (Google Transport Security);
+        Mon, 20 Apr 2026 09:05:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of lm223sg@student.lnu.se designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@student.lnu.se header.s=google header.b=U3paPvZ5;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of lm223sg@student.lnu.se designates 209.85.220.41 as permitted sender) smtp.mailfrom=lm223sg@student.lnu.se;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=lnu.se;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1776701153; cv=none;
+        d=google.com; s=arc-20240605;
+        b=lj7aiDfgRJpYWXO4mJxlkOUa1kcYgY5kU5mUtXKFYQRcxKPGq5wpYUw37hxqXiR4Ba
+         ek/zgzaLLPYM0WO9+pnmDk2iLogtZXKBzxR4/LRhQ5IsplbW3vczJxf/5Ad69EqPZnHX
+         wuwqL1srS7V/GnR0+5P47EJbkML5Xxc+DOMLYYZyvtE4dwuwE64RUD7h8I4s15RRMMf+
+         l0/zceWjtSyD9ZI0C5GSFLwO69gSgbMk62GXIwuJMVKt8342UPHyls3+N4pndcrDJHB2
+         oqHSxPAHHixaQphrNiwLZ1miYTVB8xrlHgGkr2DDlZvDOVr7CTN+TzIekyNhYyQORrWs
+         eoLg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=xvB6WJMNYtBBY2KzIzWRbbZcpYkCsPStDi0qgBtG2Rk=;
+        fh=1mu931VkwGkxIr6dTGNbYDJvcrt/elm+y1ZCv+e2ZdU=;
+        b=Epvkp2JxgIAsIUYfc2z9YV05XDovTexp+Lc6VINbtI9WAuySZ0kKhFIMkd5k36G2QG
+         LWtTrQxzPobo8elDYOdKsRCj2DaEZ6oRpsqGjg562BkFD33CaNc9TgqIXPF7VPjBtM33
+         cEjDD3Y9gcqjoAXmN1/qXbl37avcdSAMyr20HRTFI1FQ2kp1P5u5IS4REE4Z/WJUpNtp
+         Ac0YGYYDQ+4eoruTdT2IkzOBKFRfkYA7HqC6cVzrkDINsYdqkmiKrKvcPBhH/wotaU4M
+         EJaXOTizj8FlQMPrUzHCeqpLM/g3FIgG9bSrf02p0dIrFCsw85dATDdLeBBOzQCBKEsL
+         w6+A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=student.lnu.se; s=google; t=1776701153; x=1777305953; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=xvB6WJMNYtBBY2KzIzWRbbZcpYkCsPStDi0qgBtG2Rk=;
+        b=U3paPvZ5zv2LtwcDdU1nk0BV2pE4FIxVMX5QjNxRvnxA+jY3ybSbllzYopyPbCZM0x
+         SJw7I8qGI/hKu0BCb+Vtmx01ZoJoWKlXhQ+qwIgliRjIsI9ByYI6HcCK+PxW4+SHINoq
+         r+1LyI2uomYLb7oPGoyrurTA86Zh9cMytN+266A+ML7z6L6BhdD89Cp0eDczf70Elgdn
+         TIPe53m3qT3oMgs+m5j+UTo1JdZtkBaxJi4yRGfPMDAM1FlXPqWaleLjwk6FcssXVCV+
+         h8nl38+KwiOFG97t2wsYCj/osYD8AaLuyJ6oMoyuJOEDNVwP5Oas5WM9kFVsD6W740ts
+         ji8Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1776701153; x=1777305953;
+        h=to:subject:message-id:date:from:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=xvB6WJMNYtBBY2KzIzWRbbZcpYkCsPStDi0qgBtG2Rk=;
+        b=ffIk7EfrP0VRKTtKBfLklowqjw9Y76YFtiCgGYuHBjmCfdOqPtL0pBzlhIZxqNP2vk
+         RiJXDIFyaUih9RDJwVhzNhnpWBMhDOHVZPCLzapI25jf+0bLLmW5zNAC4qIRHVSY3X1i
+         bK8Nj1DYlN4gmVYaU9FApWFeillrlEDs7WibBgRPMP7sYCC/k/HUJp0w36pdADq/tA7n
+         7Amri+RE0DOy/b8TR02HjkMBPQ7OfaiMb8l3sUOIYuMzY+6imptSOTj5+ZO5SR2VTmI+
+         kAR3UaIXtrm+Ge+WC7Nl9LsTxq4ml6c3dpP//zYLmoMtJ+9O/CbXVpOAoMjha606u047
+         Aczg==
+X-Gm-Message-State: AOJu0YwUwxcutj/1PluH5HdVJrSdkn5fw8SpHjnSWVzYd13iS5l7x8k6
+	R4GG+B4G5yhREM+fnJTr4nUJMBuiK582fheHus3J/YlV2sfKaqMncS6B2EXjry3voCU+DdDe8S7
+	eURFsNbQGORPkjdKQLfQTExkb0m+fZWzPPD9mAStebjUW/j6POiAIy/r2
+X-Gm-Gg: AeBDieu9f+WzGaVyy0GPyPXz8Bm74t8GQ3iD7ijHuEDOrsG8YT2o/HKw90UwSEZB1XW
+	6RcZ62E9iw0Zp5Lm+2mBYQlINRNbo0u3nsMKp60QMXQtMC5it6Htcxda6NIxVGatkxk1BodMze4
+	SSsdquwiIX66kXpcVVeo6zw2l7naHenF1fbFLf9aSmIk8QDnmZs3rTpE3uXAASmp/S3Ag1JWhzz
+	688FVP/KM5lCyI020mMC6KLvn46rFI4/iVCZ36MnJjuTKgIdfB+IeFng+mLXNJKVq1BsMlFrHwS
+	Z8Dpx37atfjiEW9P
+X-Received: by 2002:a17:907:c30a:b0:b96:f863:deba with SMTP id
+ a640c23a62f3a-ba41aa13734mr675195766b.32.1776701153252; Mon, 20 Apr 2026
+ 09:05:53 -0700 (PDT)
+MIME-Version: 1.0
+From: =?UTF-8?Q?Luis_Eduardo_Mart=C3=ADn_Hern=C3=A1ndez?= <lm223sg@student.lnu.se>
+Date: Mon, 20 Apr 2026 18:05:43 +0200
+X-Gm-Features: AQROBzCdu5Qd0HHi1dvQX6bRRAupxbWS-RkZMyrd4oLfbsTueecFcDqVhNQY-dM
+Message-ID: <CA+TwWegEbxuypprF3-pY40X_x32Zfx+pOmtC3NNJZOBd8Nw1vA@mail.gmail.com>
+Subject: =?UTF-8?Q?Test_for_Task_7_=2D_Luis_Eduardo_Mart=C3=ADn_Hern=C3=A1ndez?=
+To: "luiseduardomartinhdez@gmail.com" <luiseduardomartinhdez@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000001cabf9064fe67932"
+
+--0000000000001cabf9064fe67932
+Content-Type: text/plain; charset="UTF-8"
+
+This is a test email to analyze SPF, DKIM, and DMARC headers for Assignment
+2.
+
+--0000000000001cabf9064fe67932
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail-gs" style=3D"margin:0px;min-width:0px;=
+padding:0px 0px 20px;width:auto;font-family:&quot;Google Sans&quot;,Roboto,=
+RobotoDraft,Helvetica,Arial,sans-serif;font-size:medium"><div class=3D"gmai=
+l-"><div class=3D"gmail-ii gmail-gt" id=3D"gmail-:13q" style=3D"direction:l=
+tr;margin:8px 0px 0px;padding:0px;font-size:0.875rem;overflow-x:hidden"><di=
+v class=3D"gmail-a3s gmail-aiL" id=3D"gmail-:13p" style=3D"direction:ltr;fo=
+nt-style:normal;font-variant:normal;font-size-adjust:none;font-kerning:auto=
+;font-feature-settings:normal;font-stretch:normal;font-size:small;line-heig=
+ht:1.5;font-family:Arial,Helvetica,sans-serif;overflow:auto hidden"><div id=
+=3D"gmail-avWBGd-50"><div dir=3D"ltr">This is a test email to analyze SPF, =
+DKIM, and DMARC headers for Assignment 2.</div></div></div></div></div></di=
+v></div>
+
+--0000000000001cabf9064fe67932--
